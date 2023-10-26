@@ -12,6 +12,7 @@ const signAsync = util.promisify(jwt.sign);
 
 var login =async(req,res,next,transaction)=>{
   console.log("hello")
+  console.log("hello")
    
         const schema = Joi.object({
           email: Joi.string().max(50).required(),
