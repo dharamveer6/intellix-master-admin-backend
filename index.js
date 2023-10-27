@@ -18,6 +18,12 @@ const { clientRoute } = require('./routers/clientroutes');
 
 
 const app = express();
+
+const logRoute = (req, res, next) => {
+  console.log(`Accessing route: ${req.path}`);
+  next();
+};
+app.use(logRoute);
 app.use(cors())
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
