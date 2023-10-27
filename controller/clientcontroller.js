@@ -180,7 +180,7 @@ var get_url_by_code=async(req,res,next,transaction)=>{
   if(url1){
 
     const {url}=url1;
-    return res.send({status:1,url})
+    return res.send({status:1,url,msg:"changes or not"})
 
     
 
