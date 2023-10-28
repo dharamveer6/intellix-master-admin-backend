@@ -186,7 +186,7 @@ var get_url_by_code=async(req,res,next,transaction)=>{
 
   }
   else{
-    return res.send({status:0,msg:"invalid school_code"})
+    return res.send({status:0,msg:"invalid docker school_code"})
   }
 
   
